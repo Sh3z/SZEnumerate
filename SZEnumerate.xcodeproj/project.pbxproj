@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E37C793197997D2000B68D1 /* SZEnumerateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E37C791197997D2000B68D1 /* SZEnumerateExtensions.h */; };
+		6E37C794197997D2000B68D1 /* SZEnumerateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37C792197997D2000B68D1 /* SZEnumerateExtensions.m */; };
+		6E37C79619799E7B000B68D1 /* SZEnumerateExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37C79519799E7B000B68D1 /* SZEnumerateExtensionsTests.m */; };
 		6EE832DD197996BA00EB5396 /* SZEnumerate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE832DC197996BA00EB5396 /* SZEnumerate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EE832E3197996BA00EB5396 /* SZEnumerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE832D7197996BA00EB5396 /* SZEnumerate.framework */; };
-		6EE832EA197996BA00EB5396 /* SZEnumerateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE832E9197996BA00EB5396 /* SZEnumerateTests.m */; };
+		CAE9E0EDC06943BDA16EF657 /* libPods-SZEnumerateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDB4F250523463AA2938B19 /* libPods-SZEnumerateTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D7C66CD5BCF4BF68BE3F31C /* Pods-SZEnumerateTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZEnumerateTests.xcconfig"; path = "Pods/Pods-SZEnumerateTests.xcconfig"; sourceTree = "<group>"; };
+		6E37C791197997D2000B68D1 /* SZEnumerateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZEnumerateExtensions.h; sourceTree = "<group>"; };
+		6E37C792197997D2000B68D1 /* SZEnumerateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZEnumerateExtensions.m; sourceTree = "<group>"; };
+		6E37C79519799E7B000B68D1 /* SZEnumerateExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZEnumerateExtensionsTests.m; sourceTree = "<group>"; };
 		6EE832D7197996BA00EB5396 /* SZEnumerate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SZEnumerate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE832DB197996BA00EB5396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EE832DC197996BA00EB5396 /* SZEnumerate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZEnumerate.h; sourceTree = "<group>"; };
 		6EE832E2197996BA00EB5396 /* SZEnumerateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZEnumerateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE832E8197996BA00EB5396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EE832E9197996BA00EB5396 /* SZEnumerateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZEnumerateTests.m; sourceTree = "<group>"; };
+		DEDB4F250523463AA2938B19 /* libPods-SZEnumerateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZEnumerateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,18 +51,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EE832E3197996BA00EB5396 /* SZEnumerate.framework in Frameworks */,
+				CAE9E0EDC06943BDA16EF657 /* libPods-SZEnumerateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A8CA08C91A47E6A7467987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEDB4F250523463AA2938B19 /* libPods-SZEnumerateTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6EE832CD197996BA00EB5396 = {
 			isa = PBXGroup;
 			children = (
 				6EE832D9197996BA00EB5396 /* SZEnumerate */,
 				6EE832E6197996BA00EB5396 /* SZEnumerateTests */,
 				6EE832D8197996BA00EB5396 /* Products */,
+				4D7C66CD5BCF4BF68BE3F31C /* Pods-SZEnumerateTests.xcconfig */,
+				00A8CA08C91A47E6A7467987 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +89,10 @@
 		6EE832D9197996BA00EB5396 /* SZEnumerate */ = {
 			isa = PBXGroup;
 			children = (
-				6EE832DC197996BA00EB5396 /* SZEnumerate.h */,
 				6EE832DA197996BA00EB5396 /* Supporting Files */,
+				6EE832DC197996BA00EB5396 /* SZEnumerate.h */,
+				6E37C791197997D2000B68D1 /* SZEnumerateExtensions.h */,
+				6E37C792197997D2000B68D1 /* SZEnumerateExtensions.m */,
 			);
 			path = SZEnumerate;
 			sourceTree = "<group>";
@@ -88,8 +108,8 @@
 		6EE832E6197996BA00EB5396 /* SZEnumerateTests */ = {
 			isa = PBXGroup;
 			children = (
-				6EE832E9197996BA00EB5396 /* SZEnumerateTests.m */,
 				6EE832E7197996BA00EB5396 /* Supporting Files */,
+				6E37C79519799E7B000B68D1 /* SZEnumerateExtensionsTests.m */,
 			);
 			path = SZEnumerateTests;
 			sourceTree = "<group>";
@@ -110,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EE832DD197996BA00EB5396 /* SZEnumerate.h in Headers */,
+				6E37C793197997D2000B68D1 /* SZEnumerateExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EE832F0197996BA00EB5396 /* Build configuration list for PBXNativeTarget "SZEnumerateTests" */;
 			buildPhases = (
+				F5CC77AE3E9B41A799DD5E7F /* Check Pods Manifest.lock */,
 				6EE832DE197996BA00EB5396 /* Sources */,
 				6EE832DF197996BA00EB5396 /* Frameworks */,
 				6EE832E0197996BA00EB5396 /* Resources */,
+				7449A28F8BB546CAAF88C3E7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,11 +228,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7449A28F8BB546CAAF88C3E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SZEnumerateTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5CC77AE3E9B41A799DD5E7F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6EE832D2197996BA00EB5396 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E37C794197997D2000B68D1 /* SZEnumerateExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EE832EA197996BA00EB5396 /* SZEnumerateTests.m in Sources */,
+				6E37C79619799E7B000B68D1 /* SZEnumerateExtensionsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +405,7 @@
 		};
 		6EE832F1197996BA00EB5396 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7C66CD5BCF4BF68BE3F31C /* Pods-SZEnumerateTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -366,6 +424,7 @@
 		};
 		6EE832F2197996BA00EB5396 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7C66CD5BCF4BF68BE3F31C /* Pods-SZEnumerateTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -397,6 +456,7 @@
 				6EE832EF197996BA00EB5396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EE832F0197996BA00EB5396 /* Build configuration list for PBXNativeTarget "SZEnumerateTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +465,7 @@
 				6EE832F2197996BA00EB5396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
